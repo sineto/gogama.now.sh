@@ -17,7 +17,7 @@ export const Card = styled.div`
   background-color: #1F1F1F;
   border-radius: 0.35rem;
   padding: 2rem;
-  margin: 2rem;
+  margin: 1.4rem;
 
   img {
     margin-bottom: 1rem;
@@ -26,11 +26,25 @@ export const Card = styled.div`
 
 export const TextP = styled.p`
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: #63DC3E;
+
+  position: relative;
   span {
-    font-weight: normal;
+    font-weight: 300;
     margin-left: 2px;
+  }
+
+  &:after {
+    content: "";
+    width: 15%;
+    height: 5px;
+    left: 0;
+    bottom: -4px;
+    position: absolute;
+    margin-left: 3px;
+    z-index: 9;
+    background: #5d5d5d;
   }
 `;
 
