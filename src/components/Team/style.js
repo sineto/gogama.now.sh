@@ -3,7 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   height: 500px;
-  color: #5d5d5d;  
+  color: #5d5d5d;
+`;
+
+export const TextH1 = styled.h1`
+  padding: 1.5rem;
 `;
 
 export const Cards = styled.div`
@@ -14,10 +18,11 @@ export const Cards = styled.div`
 `;
 
 export const Card = styled.div`
+  width: 398px; 
   background-color: #1F1F1F;
   border-radius: 0.35rem;
   padding: 2rem;
-  margin: 1.4rem;
+  margin: 1rem;
 
   img {
     margin-bottom: 1rem;
@@ -65,4 +70,5 @@ export const BtnVerMais = styled.a`
   color: #63DC3E;
   border: 2px solid #63DC3E;
   padding: 0.45rem 0.85rem;
+  cursor: pointer;
 `;
