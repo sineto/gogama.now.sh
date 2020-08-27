@@ -6,6 +6,43 @@ export const Container = styled.div`
   color: #5d5d5d;
 `;
 
+export const Squad = styled.div`
+  padding: 2rem; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    max-width: 55%;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #c4c4c4;
+    span {
+      color: #63DC3E;
+    }
+  }
+
+  ul {
+    list-style-type: circle;
+    list-style-position: inside;
+
+    li {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #c4c4c4;
+      margin: 0.65rem 0;
+      
+      span {
+        color: #63DC3E;
+      }
+    }
+  }
+`;
+
 export const TextH1 = styled.h1`
   padding: 1.5rem;
 `;
