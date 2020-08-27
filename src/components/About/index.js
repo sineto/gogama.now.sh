@@ -10,7 +10,7 @@ import {
 const About = () => {
   return (
     <Container>
-      <img src='/images/heroes.png' />      
+      <img srcset='/images/heroes.png' />      
       <Resume>
         <TextH1>
           Somos um Time de Desenvolvedores preparado 

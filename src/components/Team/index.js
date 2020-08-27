@@ -115,7 +115,7 @@ const people = [
     ]
   },
   {
-    firstname: 'Dayana',
+    firstname: 'Day',
     lastname: 'Corvalan',
     avatar: '/images/avatars/day-cor.png',
     avatarWithBg: '/images/avatars/withbgs/day.jpeg',
