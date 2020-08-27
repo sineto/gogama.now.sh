@@ -18,7 +18,7 @@ const About = () => {
         </TextH1>
         <TextP>
           Sabe quando os super-heróis reúnem suas habilidades 
-          para salvar o mundo? Foi bem assim que Os IncríveX 
+          para salvar o mundo? Foi bem assim que Os Impossíveis 
           se conheceram! Tínhamos o desafio de participar 
           de um treinamento com 3.000 fantásticos competidores 
           e, após 36 semanas de muito estudo, trabalho e 
