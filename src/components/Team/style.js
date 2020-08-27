@@ -72,3 +72,41 @@ export const BtnVerMais = styled.a`
   padding: 0.45rem 0.85rem;
   cursor: pointer;
 `;
+
+export const ModalCard = styled.div`
+  font-size: 0.85rem;
+  color: #c4c4c4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const ModalInfo = styled.div`
+  max-width: 556px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+`;
+
+export const CardInfo = styled.div`
+  padding: 0.5rem;
+`;
+
+export const ModalImg = styled.div`
+  width: 380px;
+  height: 480px;
+  background-image: url(${props => props.avatarWithBg});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: right;
+`;
+
+export const TextQuestion = styled.p`
+  font-weight: bold;
+  color: #63DC3E;
+`;
+
+export const TextAnswer = styled.p`
+  // margin-bottom: 1rem;
+`;
