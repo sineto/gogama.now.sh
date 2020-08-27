@@ -34,9 +34,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "git-commit-msg-linter": "^2.4.5",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.13"
-  }
+  "devDependencies": {}
 }
