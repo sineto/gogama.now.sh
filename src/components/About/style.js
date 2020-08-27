@@ -9,8 +9,8 @@ export const Container = styled.article`
   background-position: left top;
   background-size: cover;
 
-  padding: 2rem;
-  margin-bottom: 4rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
 
   display: flex;
   flex-wrap: wrap;
@@ -22,7 +22,7 @@ export const Container = styled.article`
     padding: 1rem;
   }
 
-  @media (min-width: 680px) {
+  @media (min-width: 400px) {
     justify-content: center;
   }
 `;
@@ -30,14 +30,17 @@ export const Container = styled.article`
 export const Resume = styled.div`
   max-width: 671px;
   letter-spacing: 0.95px;
-  padding: 2rem;
+  margin: 1rem;
 `;
 
 export const TextH1 = styled.h1`
   font-size: 1.8rem;
   color: #63DC3E;
-  margin-bottom: 0.85rem;
+  margin: 1.2rem 0 0.85rem 0;
 `;
 
 export const TextP = styled.p`
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 `;

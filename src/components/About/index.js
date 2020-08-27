@@ -17,19 +17,32 @@ const About = () => {
           para o desafio
         </TextH1>
         <TextP>
-          Lorem ipsum dolor sit amet, consectetur 
-          adipiscing elit. Sit sit elit quisque risus 
-          ullamcorper blandit malesuada mauris, elementum. 
-          Quam dolor et auctor nullam lectus eu. Quam gravida 
-          donec nunc ac id nulla mollis. In eu condimentum 
-          pellentesque diam ut. Aliquet nulla diam metus 
-          morbi est urna viverra id imperdiet. Nibh et in 
-          posuere dui auctor vehicula pharetra, viverra. 
-          Quis enim tellus purus sed mauris malesuada viverra.
+          Sabe quando os super-heróis reúnem suas habilidades 
+          para salvar o mundo? Foi bem assim que Os IncríveX 
+          se conheceram! Tínhamos o desafio de participar 
+          de um treinamento com 3.000 fantásticos competidores 
+          e, após 36 semanas de muito estudo, trabalho e 
+          superação, chegamos à semi-final do Desafio Hiring Coders 2020. 
+        </TextP>
+
+        <TextP>
+          Todos os 10 integrantes desta equipe multisciplinar 
+          possuem o superpoder de adquirir novas competências 
+          com facilidade, além de superdisposição para 
+          ajudar no que for necessário e, principalmente, 
+          muita força de vontade de conquistar o primeiro 
+          lugar!
+        </TextP>
+
+        <TextP>
+          Confira abaixo um pouco mais sobre nosso Squad.
         </TextP>
       </Resume>
     </Container>
   );
 }
 
+
+
+// Confira abaixo um pouco mais sobre nosso Squad.
 export default About;
