@@ -7,8 +7,6 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 import { 
   Container,
-  Squad,
-  SquadTopics,
   TextH1,
   Cards,
   Card,
@@ -213,17 +211,6 @@ const Team = () => {
 
   return (
     <Container>
-      <Squad>
-        <img src='/images/avatars/squad-meeting.png' />
-        <SquadTopics>
-          <ul>
-            <li>Vontade de <span>fazer acontecer</span> na VTEX;</li>
-            <li>Sangue no olho para <span>entregar o melhor resultado</span>;</li>
-            <li><span>Trabalho em equipe</span> com empatia e colaboração.</li>
-          </ul>
-          <p>Somos <span>Os Impossíveis!</span></p>
-        </SquadTopics>
-      </Squad>
       <TextH1>O TIME</TextH1>
       <Cards>
         {peopleSorted.map((person) => {
@@ -280,6 +267,4 @@ const Team = () => {
   );
 };
 
-
-                          // <img src={personForModal.avatarWithBg} />
 export default Team;
