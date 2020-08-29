@@ -7,6 +7,9 @@ export const Container = styled.div`
 `;
 
 export const TextH1 = styled.h1`
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #5d5d5d;
   padding: 1.5rem;
 `;
 
@@ -66,11 +69,17 @@ export const Infos = styled.div`
 
 export const BtnVerMais = styled.a`
   font-size: 0.85rem;
+  font-weight: 500;
   text-transform: uppercase;
   color: #63DC3E;
   border: 2px solid #63DC3E;
   padding: 0.45rem 0.85rem;
   cursor: pointer;
+
+  &:hover {
+    color: #1f1f1f;
+    background: #63DC3E;
+  }
 `;
 
 export const ModalCard = styled.div`
@@ -79,6 +88,10 @@ export const ModalCard = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const ModalInfo = styled.div`
@@ -99,7 +112,7 @@ export const ModalImg = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  float: right;
+  // float: right;
 `;
 
 export const TextQuestion = styled.p`
