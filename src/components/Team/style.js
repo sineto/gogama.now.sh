@@ -41,6 +41,29 @@ export const Squad = styled.div`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+`;
+
+export const SquadTopics = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 export const TextH1 = styled.h1`
