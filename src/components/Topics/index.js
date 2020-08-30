@@ -9,7 +9,7 @@ import {
 const Topics = () => {
   return (
     <TopicsSection>
-      <img src='/images/avatars/squad-meeting.png' />
+      <img src='/images/avatars/squad-meeting.png' alt='Meeting Print' />
       <TopicsInfo>
         <TopicsList>
           <li>1. Vontade de <span>fazer acontecer</span> na VTEX;</li>
