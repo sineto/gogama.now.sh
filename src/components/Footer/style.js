@@ -33,7 +33,7 @@ export const Container = styled.footer`
 	}
 `;
 
-export const Button = styled.button` 
+export const Button = styled.a` 
 	font-weight: 500;
 	color: #63DC3E;
 	border: 2px solid #63DC3E;
