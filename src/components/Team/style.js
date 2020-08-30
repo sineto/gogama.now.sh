@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  height: 500px;
   color: #5d5d5d;
+  margin-bottom: 2rem;
 `;
 
 export const TextH1 = styled.h1`
@@ -37,6 +37,7 @@ export const Card = styled.div`
 `;
 
 export const CardMeta = styled.div`
+  margin-top: 1rem;
 `;
 
 export const CardMetaName = styled.p`
