@@ -1,76 +1,48 @@
-import React, { useState } from 'react';
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import React, { useState, useContext } from 'react';
 
+import DataContext from '../../context/DataContext';
+import TeammateCard from './TeammateCard';
 import TeammateModal from './TeammateModal';
-import people from '../../teammates.json';
 
 import { 
   Container,
   TextH1,
   Cards,
-  Card,
-  TextP,
-  Infos,
-  BtnVerMais,
 } from './style';
 
-
-const questions= [
-  'Qual o seu maior medo?',
-  'O que quero aprender?',
-  'O que posso ensinar?',
-  'Suas expectativas para o VTEX Trainning Week:'
-]
-
 const Team = () => {
-  const [open, setOpen] = useState(false);
-  const [personForModal, setPersonForModal] = useState({});
+  const { people, person, setPerson } = useContext(DataContext);
+  const [isOpenModal, setIsOpenModal] = useState(false);
 
-  const handleOpen = (person) => {
-    setOpen(true);
-    setPersonForModal(person);
+  const handleOpenModal = (teammate) => {
+    setPerson(teammate);
+    setIsOpenModal(true);
   };
 
-  const handleClose = () => {
-    setOpen(false);
+  const handleCloseModal = () => {
+    setIsOpenModal(false);
   };
 
-  const sortCb = (nameA, nameB) => {
-    const a = nameA.firstname.toLowerCase();
-    const b = nameB.firstname.toLowerCase();
-    if (a < b) { return -1; }
-    if (a > b) { return 1; }
-    return 0;
-  };
-
-  const peopleSorted = people.sort(sortCb);
+  console.log('isOpenModal:', isOpenModal);
 
   return (
     <Container>
       <TextH1>O TIME</TextH1>
       <Cards>
-        {peopleSorted.map((person) => {
+        {people.map((teammate, idx) => {
           return (
-            <Card>
-              <img src={person.avatar} />
-              <TextP>{person.firstname}<span>{person.lastname}</span></TextP>
-              <Infos>
-                <BtnVerMais 
-                  onClick={() => handleOpen(person)}
-                >
-                  Saiba Mais
-                </BtnVerMais>
-                <a href={person.github}><FaGithub size={27}/></a>
-                <a href={person.linkedin}><FaLinkedinIn size={27}/></a>
-                <TeammateModal 
-                  handleClose={handleClose}
-                  visible={open}
-                  person={personForModal}
-                />
-              </Infos>
-            </Card>
+            <TeammateCard
+              key={idx + 1}
+              teammate={teammate}
+              handleOpenModal={handleOpenModal}
+            />
           )
         })}
+        <TeammateModal 
+          handleCloseModal={handleCloseModal}
+          isOpenModal={isOpenModal}
+          person={person}
+        />
       </Cards>
     </Container>
   );
