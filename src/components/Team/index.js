@@ -23,8 +23,6 @@ const Team = () => {
     setIsOpenModal(false);
   };
 
-  console.log('isOpenModal:', isOpenModal);
-
   return (
     <Container>
       <TextH1>O TIME</TextH1>
