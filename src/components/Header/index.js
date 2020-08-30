@@ -7,11 +7,11 @@ const Header = () => {
       <Hero>
         <picture>
           <source 
-            srcset="/images/hero-header2x.png"
+            srcSet="/images/hero-header2x.png"
             media="(min-width: 789px)"
           />
           <source 
-            srcset="/images/hero-header1x.png"
+            srcSet="/images/hero-header1x.png"
             media="(max-width: 768px)"
           />
           <img 
