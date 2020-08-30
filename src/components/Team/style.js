@@ -20,6 +20,7 @@ export const Cards = styled.div`
   align-items: center;
 `;
 
+
 export const Card = styled.div`
   width: 398px; 
   background-color: #1F1F1F;
@@ -27,12 +28,18 @@ export const Card = styled.div`
   padding: 2rem;
   margin: 1rem;
 
+  display: flex;
+  flex-direction: column;
+
   img {
-    margin-bottom: 1rem;
+    margin: 0 auto;
   }
 `;
 
-export const TextP = styled.p`
+export const CardMeta = styled.div`
+`;
+
+export const CardMetaName = styled.p`
   font-weight: bold;
   font-size: 2.2rem;
   color: #63DC3E;
@@ -54,20 +61,22 @@ export const TextP = styled.p`
     z-index: 9;
     background: #5d5d5d;
   }
-`;
 
-export const Infos = styled.div`
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  a:not(:first-child) {
-    color: #5D5D5D;
+  @media (max-width: 768px) {
+    font-size: 2.0rem;
   }
-  margin-top: 2rem;
 `;
 
-export const BtnVerMais = styled.a`
+export const CardMetaActions = styled.ul`
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  li {
+    margin-right: 1rem;
+  }
+`;
+
+export const CardBtn = styled.a`
   font-size: 0.85rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -79,6 +88,14 @@ export const BtnVerMais = styled.a`
   &:hover {
     color: #1f1f1f;
     background: #63DC3E;
+  }
+`;
+
+export const CardSocialBtn = styled.a`
+  color: #5d5d5d;
+
+  &:hover {
+    color: #63DC3E;
   }
 `;
 
@@ -112,7 +129,11 @@ export const ModalImg = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  // float: right;
+
+  @media (max-width: 768px) {
+    width: 190px;
+    height: 240px;
+  }
 `;
 
 export const TextQuestion = styled.p`
