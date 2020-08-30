@@ -2,17 +2,15 @@ import React from 'react';
 import { Container } from './style';
 
 import Header from '../../components/Header';
-import About from '../../components/About';
-import Topics from '../../components/Topics';
-import Team from '../../components/Team';
+import Main from '../../components/Main';
+import Footer from '../../components/Footer';
 
 const Index = () => {
   return (
     <Container>
       <Header />
-      <About />
-      <Topics />
-      <Team />
+      <Main />
+      <Footer />
     </Container>
   );
 };
