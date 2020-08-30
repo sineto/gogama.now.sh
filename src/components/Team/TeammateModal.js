@@ -1,51 +1,28 @@
 import React from 'react';
 import { Modal } from 'antd';
 
+import TeammateQuestions from './TeammateQuestions';
+
 import {
   ModalCard,
-  ModalInfo,
-  CardInfo,
   ModalImg,
-  TextQuestion,
-  TextAnswer
 } from './style';
 
-const questions= [
-  'Qual o seu maior medo?',
-  'O que quero aprender?',
-  'O que posso ensinar?',
-  'Suas expectativas para o VTEX Trainning Week:'
-]
-
-const TeammateModal = ({ handleClose, visible, person }) => {
+const TeammateModal = ({ handleCloseModal, isOpenModal, person }) => {
   return (
     <Modal
       width='80%'
-      footer={null}
       title={`${person.firstname} ${person.lastname}`}
+      footer={null}
       centered
-      visible={visible}
-      onCancel={handleClose}
+      visible={isOpenModal}
+      onCancel={() => handleCloseModal()}
       bodyStyle={{
         background: '#1f1f1f',
       }}
     >
       <ModalCard>
-        <ModalInfo>
-          {questions.map((quest, idx) => {
-            console.log('question:', quest, idx);
-              return (
-                <CardInfo>
-                  <TextQuestion>
-                    {quest}
-                  </TextQuestion>
-                  <TextAnswer>
-                    {person.answers ? person.answers[idx] : 'teste'}
-                  </TextAnswer>
-                </CardInfo>
-              )
-          })}
-        </ModalInfo>
+        <TeammateQuestions answers={person.answers} />
         <ModalImg avatarWithBg={person.avatarWithBg}>
         </ModalImg>
       </ModalCard>
